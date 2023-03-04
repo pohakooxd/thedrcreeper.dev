@@ -6,14 +6,22 @@
     <meta charset="UTF-8" />
     <title>You Are Jeff Bezos | 3kh0</title>
     <script>
-      setInterval(function() {
-        var currentDate = new Date();
-        var hours = currentDate.getHours();
-        if (hours >= 8 && hours <= 14) { // between 8:00 AM and 3:00 PM
-          window.location.href = "https://outside-of-acepted-time.quintenmckasson.repl.co"
+      var currentDate = new Date();
+      var dayOfWeek = currentDate.getDay(); // 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
+      var hours = currentDate.getHours();
+      var minutes = currentDate.getMinutes();
+      var time = hours + ":" + minutes;
+      
+      if (dayOfWeek === 1 || dayOfWeek === 2 || dayOfWeek === 4 || dayOfWeek === 5) { // Monday, Tuesday, Thursday, Friday
+        if (time >= "8:10" && time <= "15:10") {
+          window.location.href = "https://outside-of-acepted-time.quintenmckasson.repl.co";
         }
-      }, 1000); // check every second
-  </script>
+      } else if (dayOfWeek === 3) { // Wednesday
+        if (time >= "8:10" && time <= "14:10") {
+          window.location.href = "https://outside-of-acepted-time.quintenmckasson.repl.co";
+        }
+      } 1000 // else it's a weekend and we do nothing
+    </script>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <script id="script-libraries" type="text/javascript">
       if (document.head && document.addEventListener && document.querySelector && Object.create && Object.freeze && JSON) {

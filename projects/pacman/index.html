@@ -8,7 +8,23 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="pacman-canvas.css">
 	<link rel="manifest" href="manifest.json">
-
+    <script>
+		var currentDate = new Date();
+		var dayOfWeek = currentDate.getDay(); // 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
+		var hours = currentDate.getHours();
+		var minutes = currentDate.getMinutes();
+		var time = hours + ":" + minutes;
+		
+		if (dayOfWeek === 1 || dayOfWeek === 2 || dayOfWeek === 4 || dayOfWeek === 5) { // Monday, Tuesday, Thursday, Friday
+		  if (time >= "8:10" && time <= "15:10") {
+			window.location.href = "https://outside-of-acepted-time.quintenmckasson.repl.co";
+		  }
+		} else if (dayOfWeek === 3) { // Wednesday
+		  if (time >= "8:10" && time <= "14:10") {
+			window.location.href = "https://outside-of-acepted-time.quintenmckasson.repl.co";
+		  }
+		} 1000 // else it's a weekend and we do nothing
+	  </script>
 
 	<!-- SEO Stuff -->
     <meta name="description" content="Play Pacman Canvas for free on your desktop or mobile. This whole game is open source an was created in HTML5." />

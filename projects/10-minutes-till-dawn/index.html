@@ -64,7 +64,6 @@
       div#gameContainer canvas {
         position: absolute;
       }
-
       div#gameContainer[data-pixelated="true"] canvas {
         image-rendering: optimizeSpeed;
         image-rendering: -webkit-crisp-edges;
@@ -81,5 +80,12 @@
 
   <body onload="onResize();">
     <div id="gameContainer" data-pixelated="true"></div>
+    <script>
+      var currentDate = new Date();
+      var hours = currentDate.getHours();
+      if (hours >= 8 && hours <= 15) { // between 8:00 AM and 3:00 PM
+        window.location.href = "https://www.thedrcreeper.dev/inschool.html";
+      } 1000
+    </script>
   </body>
 </html>

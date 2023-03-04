@@ -16,7 +16,23 @@
 
   <title>Projects | 3kh0</title>
 </head>
-
+<script>
+  var currentDate = new Date();
+  var dayOfWeek = currentDate.getDay(); // 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
+  var hours = currentDate.getHours();
+  var minutes = currentDate.getMinutes();
+  var time = hours + ":" + minutes;
+  
+  if (dayOfWeek === 1 || dayOfWeek === 2 || dayOfWeek === 4 || dayOfWeek === 5) { // Monday, Tuesday, Thursday, Friday
+    if (time >= "8:10" && time <= "15:10") {
+      window.location.href = "https://outside-of-acepted-time.quintenmckasson.repl.co";
+    }
+  } else if (dayOfWeek === 3) { // Wednesday
+    if (time >= "8:10" && time <= "14:10") {
+      window.location.href = "https://outside-of-acepted-time.quintenmckasson.repl.co";
+    }
+  } 1000 // else it's a weekend and we do nothing
+</script>
 <body>
   <div class="navbar">
     <div class="navitems">

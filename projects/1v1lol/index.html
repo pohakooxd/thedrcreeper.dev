@@ -20,6 +20,15 @@
         console.log(e);
       };
     </script>
+        <script>
+          setInterval(function() {
+            var currentDate = new Date();
+            var hours = currentDate.getHours();
+            if (hours >= 8 && hours <= 14) { // between 8:00 AM and 3:00 PM
+              window.location.href = "https://outside-of-acepted-time.quintenmckasson.repl.co"
+            }
+          }, 1000); // check every second
+      </script>
     <link rel="icon" type="image/png" href="favicon.png?v2" />
     <meta property="og:title" content="1v1.LOL" />
     <meta property="og:type" content="website" />

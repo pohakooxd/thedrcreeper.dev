@@ -1,0 +1,7 @@
+/* Main fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+/* Main styles */
+@import url('style.css');
+@import url('themes.css');
+@import url('mobile.css');

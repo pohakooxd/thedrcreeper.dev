@@ -1,0 +1,12 @@
+{
+    "name": "Snokido",
+    "short_name": "SK",
+    "icons": [
+        {
+            "src": "/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "display": "standalone"
+}

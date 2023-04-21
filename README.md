@@ -6,7 +6,7 @@
 <h1 align="center">3kh0</h1>
 <p align="center">The better unblocked games website.</p>
 
-This is the GitHub repo which is used to host the website. If you want to use the games on here on your website, please message me on discord at `thedrcreeper#9892` and we can talk! If you're looking for the link, click [here](https://3kh0.github.io).
+This is the GitHub repo which is used to host the website. If you want to use the games on here on your website, please message me on discord at `thedrcreeper#9892` and we can talk! If you're looking for the link, click [here](https://thedrcreeper.dev/).
 
 > **Note**
 > **If you do fork this repo, please give the orginal repo a star! It helps out alot and only 30% of people who fork give me a star.**
